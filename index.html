@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Esercizio Kodland</title>
+    </head>
+    <body>
+        
+        
+        <!-- Mobile -->
+        <header class="header-mobile d-none-desktop">
+            <div class="header-mobile-logo">NOT_A_BUBBLE.COM</div>
+            <nav>
+                <ul class="header-mobile-menu">
+                    <li class="menuItemList"><a class="menuItem" href="#">ABOUT</a></li>
+                    <li class="menuItemList"><a class="menuItem" href="#">SALE</a></li>
+                    <li class="menuItemList"><a class="menuItem" href="#">CONTACTS</a></li>
+                </ul>
+            </nav>           
+            <button class="header-mobile-hamburger">
+                    <i class="menuIcon fa-solid fa-bars"></i>                    
+                    <i class="closeIcon fa-solid fa-x"></i>
+            </button>
+        </header>
+        <!-- Desktop -->
+        <header class="d-none-smartphone d-block-desktop">
+            <div class="header-desktop">
+                <div class="header-desktop-logo">NOT_A_BUBBLE.COM</div>
+                <nav>
+                    <ul class="header-desktop-menu">
+                        <li class="header-desktop-menu-item"><a href="#">ABOUT</a></li>
+                        <li class="header-desktop-menu-item"><a href="#">SALE</a></li>
+                        <li class="header-desktop-menu-item"><a href="#">CONTACTS</a></li>
+                    </ul>
+                </nav>         
+            </div>  
+        </header>
+
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="container p-relative">
+                <img class="hero-image" src="./images/background2.png" alt="">
+                <div class="hero-box">
+                    <h1 class="hero-box-title">POP IT!</h1>
+                    <p class="hero-box-paragraph">Best Antistress Toy is the Endless toy bubble wrap!</p>
+                    <a href="#" class="hero-box-button">BUY</a>
+                </div>
+            </div>
+        </div>
+
+
+        <main>
+            <!-- Description -->
+            <div class="description">
+                <div class="description-body small-container">
+                    <h3 class="description-title">What is Pop it exactly?</h3>
+                    <p class="description-text">This is child's game, in which the process can be compared to the bursting of a bubble wrap. But unlike film, pop-it can be pressed with the same characteristic sensations and sounds "endlessly": dozens of silicone bubbles are simply squeezed out in the other direction.</p>
+                </div>
+            </div>
+
+            <!-- Products Mobile -->
+            <div class="products-smartphone d-none-desktop">
+                <h2 class="products-smartphone-title">Choose your Pop-It!</h2>
+                <div id="productImage"></div>
+                <div id="productName"></div>
+                <div class="button-buy">
+                    <a href="#" class="products-smartphone-button">BUY</a>
+                </div>
+                <div class="buttons">
+                    <button id="previous"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+
+            <!-- Products Desktop -->
+            <div class="products-desktop d-none-smartphone d-block-desktop">
+                <div class="small-container row">
+                    <h2 class="col-12 products-desktop-title">Choose your Pop-It!</h2>
+                    <div class="products-desktop-column">
+                        <img class="products-desktop-photo" src="./images/square.png" alt="">
+                        <h3 class="products-desktop-name">Multicolored square</h3>
+                        <div>
+                            <a href="#" class="products-desktop-button">BUY</a>
+                        </div>
+                    </div>
+                    <div class="products-desktop-column">
+                        <img class="products-desktop-photo" src="./images/amongus.png" alt="">
+                        <h3 class="products-desktop-name">Among Us, marbled</h3>
+                        <div>
+                            <a href="#" class="products-desktop-button">BUY</a>
+                        </div>
+                    </div>
+                    <div class="products-desktop-column">
+                        <img class="products-desktop-photo" src="./images/round.png" alt="">
+                        <h3 class="products-desktop-name">Multicolored round</h3>
+                        <div>
+                            <a href="#" class="products-desktop-button">BUY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Rules -->
+             <div class="rules">
+                <div class="rules-body container row">
+                    <div class="rules-text col-12 col-md-6">
+                        <h3 class="rules-box-title">Rules of the game</h3>
+                        <p class="rules-box-paragraph">Players take turns and click on the bumos. It is imperative to finish the row that you started. You can press a maximum of 3 bubbles at the same time (they must be near, you cannot press several pimples at once, if they are not close to each other. The task is to make the opponent go last. Who went last - he lost!)</p>
+                    </div>
+                    <div class="rules-image col-12 col-md-6">
+                        <img src="./images/photo.jpg" alt="">
+                    </div>
+                </div>
+             </div>
+        </main>
+
+        <!-- Footer -->
+         <footer class="footer">
+            <nav class="footer-nav container">
+                <ul class="footer-nav-list row">
+                    <li class="footer-nav-list-item col-12 col-md-five">
+                        <a href="#">NOT_A_BUBBLE.COM</a>
+                    </li>
+                    <li class="footer-nav-list-item col-12 col-md-five">
+                        <a href="#">Payment Methods</a>
+                    </li>
+                    <li class="footer-nav-list-item col-12 col-md-five">
+                        <a href="#">Delivery</a>
+                    </li>
+                    <li class="footer-nav-list-item col-12 col-md-five">
+                        <a href="#">Wholesale</a>
+                    </li>
+                    <li class="footer-nav-list-item col-12 col-md-five">
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+         </footer>
+
+        <!-- Script JS -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>

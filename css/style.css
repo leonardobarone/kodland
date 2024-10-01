@@ -1,0 +1,400 @@
+/* Reset */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --one: #FC2E20;
+    --two: #9CFC50;
+    --three: #FE7F20;
+}
+
+/* Typography */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+.container {
+    max-width: 992px;
+    margin: 0px auto;
+}
+
+.small-container{
+    max-width: 842px;
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
+
+.p-relative {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Mobile */
+.header-mobile {
+    height: 65px;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    background-color: var(--one);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.header-mobile-hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border-style: none;
+    font-size: 15px;
+}
+
+.header-mobile-logo {
+    font-weight: bold;
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    left: 15px;
+    z-index: 100;
+    color: white;
+}
+
+.header-mobile-menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #333333;
+    color: white;
+    list-style: none;
+    padding: 80px 30px;
+    color: white;
+}
+
+.menuItemList {
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+}
+
+.menuIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+.menuItem {
+    color: white;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+.closeIcon {
+    display: none;
+}
+
+/* Header Desktop */
+.d-none-smartphone {
+    display: none;
+}
+
+.header-desktop-logo {
+    font-weight: bold;
+}
+
+.header-desktop {
+    position: fixed;
+    padding: 15px;
+    z-index: 100;
+    background-color: var(--one);
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-desktop-menu {
+    list-style: none;
+    display: flex;
+}
+
+.header-desktop-menu-item a {
+    color: black;
+    transition: all 1s;
+}
+
+.header-desktop-menu-item a:hover {
+    font-weight: bold;
+}
+
+.header-desktop-menu-item:not(:last-child) {
+    padding-right: 15px;
+}
+
+/* Hero */
+.hero {
+    background-color: var(--one);;
+}
+
+.hero-image {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-box {
+    top: calc(50% - 125px);
+    position: absolute;
+    padding: 10px;
+}
+
+.hero-box-title {
+    font-size: 75px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-box-paragraph {
+    font-weight: bold;
+    color: white;
+}
+
+.hero-box-button {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: var(--two);
+    padding: 10px 60px;
+    margin-top: 25px;
+    transition: all 1s;
+}
+
+.hero-box-button:hover {
+    background-color: var(--three);
+    color: white;
+    border: 1px solid white;
+}
+
+/* Description */
+.description-body {
+    padding: 75px 15px;
+    text-align: center;
+}
+
+.description-title {
+    margin-bottom: 10px;
+}
+
+/* Products */
+.products-desktop {
+    background-color: var(--two);
+    padding: 45px;
+}
+
+.products-desktop-column {
+    padding: 20px 0px;
+    margin: 20px 0px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.products-desktop-title {
+    text-align: center;
+}
+
+.products-desktop-photo {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.products-desktop-name {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.products-desktop-button {
+    color: black;
+    background-color: var(--three);
+    padding: 2px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.products-desktop-button:hover {
+    background-color: var(--one);
+    color: white;
+}
+
+/* Products Smartphone */
+.products-smartphone {
+    background-color: var(--two);
+    padding: 45px;
+}
+
+.products-smartphone-image {
+    width: 250px;
+    text-align: center;
+}
+
+.products-smartphone-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#productName {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#productImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#previous, #next {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-style: none;
+    background-color: white;
+}
+
+.button-buy {
+    text-align: center;
+    margin: 10px 0px 15px 0px;
+}
+
+.products-smartphone-button {
+    color: black;
+    background-color: var(--three);
+    padding: 2px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.products-smartphone-button:hover {
+    background-color: var(--one);
+    color: white;
+}
+
+/* Rules */
+.rules {
+    padding: 50px 0px;
+}
+
+.rules-body {
+    background-image: url(../images/bg-grid2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.rules-text {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rules-box-title {
+    font-size: 15px;
+}
+
+.rules-box-paragraph {
+    font-size: 12px;
+}
+
+.rules-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-image img {
+    width: 50%;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    padding: 25px 0px;
+    background-color: #333333;
+}
+
+.footer-nav-list-item  {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-nav-list-item a {
+    color: gray;
+    transition: all 1s;
+}
+
+.footer-nav-list-item a:hover {
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-five {
+        flex-basis: 20%;
+    }
+
+    .col-md-6 {
+        flex-basis: 50%;
+    }
+
+    .d-none-desktop{
+        display: none;
+    }
+
+    .d-block-desktop {
+        display: block;
+    }
+
+}
